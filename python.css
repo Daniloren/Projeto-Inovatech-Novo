@@ -1,0 +1,158 @@
+/*
+Zerar Estilo
+*/
+
+*{
+  padding: 0;
+  margin: 0;
+  
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+/*
+ Barra Superior
+*/
+
+header{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  margin-top: 50px;
+  height: 230px;
+}
+.itemMenuContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+.divBusca {
+  display: inline;
+
+}
+#txtBusca {
+  width: 350px;
+}
+
+.divMenu {
+  display: inline;
+  padding: 10px;
+  border: solid 1px #00ffff;
+  border-radius: 5px;
+  color: #00ffff;
+  font-style: italic;
+  margin-right: 30px;
+  
+}
+
+/*
+  Seção Descrição do Curso
+*/
+
+.descricaoCurso{
+  margin-top: 120px;
+  padding: 20px;
+  border: solid 2px #00ffff;
+}
+
+.descricaoCurso h1 {
+  text-align: center;
+  border: solid 2px #00ffff;
+  
+}
+
+.dadosCurso {
+  display: flex;
+  border: solid 2px #00ffff;
+  flex-wrap: wrap;
+}
+
+
+.divUm{
+  border-radius: 50% ;
+  border: solid 2px white;
+  width: 70px;
+  height: 70px;
+  margin: 30px;
+  font-size: 15px;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+}
+
+.divDois {
+  border-radius: 50% ;
+  border: solid 2px white;
+  width: 70px;
+  height: 70px;
+  margin: 30px;
+  font-size: 16px;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.txtCurso {
+  padding: 20px;
+}
+
+/*
+  Footer
+*/
+
+a{
+  color: #00ffff;
+  text-decoration: none;
+}
+footer {
+  width: 100%;
+  border: solid 1px #00ffff;
+  color: #00ffff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  
+}
+.footerLink {
+  display: inline;
+  width: 100%;
+  margin: 5px;
+  padding-left: 100px;
+  font-style: italic;
+  margin-right: auto;
+}
+
+.link{
+  padding: 10px;
+  
+}
+
+.imgFace {
+
+  display: inline;
+  float: right;
+  padding-top: 10px;
+  margin-right: 50px;
+}
+.imgInstagram {
+  display: inline;
+  float: right;
+  padding-top: 10px;
+  margin-right: 15px;
+}
+.imgWhatsapp {
+  display: inline;
+  float: right;
+  padding-top: 10px;
+  margin-right: 15px;
+}
