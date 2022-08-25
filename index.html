@@ -15,44 +15,30 @@
 
   <!-- Bootstrap core CSS -->
   <link href="bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-  <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      user-select: none;
-    }
-
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-    }
-  </style>
 
 
   <!-- Custom styles for this template -->
-  <link href="carousel.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
 </head>
 
-<body style="background-color: black;">
+<body>
 
   <header>
-    <nav class="navbar navbar-expand navabar-dark" style="background-color: black;">
+    <nav class="navbar navbar-expand navabar-dark">
       <div class="container-fluid">
         <div>
 
           <a class="navbar-brand" href="#">
-            <img src="Logo.png" alt="logo de tecnologia esverdiado" width="200" height="170">
+            <img src="Logo.png" alt="logo de tecnologia esverdiado">
           </a>
         </div>
         <div>
 
           <form class="d-flex">
             <input class="form-control me-2" type="Buscar" placeholder="Buscar" aria-label="Buscar">
-            <button class="btn btn-outline-success" type="submit" style="color:#00ffff">Buscar</button>
+            <button class="buscar btn btn-outline-success" type="submit">Buscar</button>
           </form>
         </div>
         <div>
@@ -65,10 +51,10 @@
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
               
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="inscricao.html" style="color: #00ffff;"  style='float:right'>Matrícula</a>
+                <a class="nav-link active" aria-current="page" href="inscricao.html">Matrícula</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Login.html" style="color: #00ffff;">login</a>
+                <a class="nav-link" href="Login.html">login</a>
               </li>
               <li class="nav-item">
               </li>
@@ -95,7 +81,7 @@
             src="https://c.wallhere.com/photos/56/d4/programming_programming_language_Python_programming_logo_simple_background_black_background_artwork-1942267.jpg!d" alt="logo representa uma linguagem de programação chamada paython">
 
           <div class="container">
-            <div class="carousel-caption text-start" style="color: #00ffff;">
+            <div class="carousel-caption text-start">
               <h1>Python.</h1>
               <p>Python é uma linguagem <br> programação<br> de alto nível, interpretada de script....</p>
               <p><a class="btn btn-lg btn-primary" href="python.html">Saiba mais</a></p>
@@ -155,32 +141,33 @@
     <div class="container marketing">
 
       <!-- Three columns of text below the carousel -->
-      <div class="row">
+      <div class="row" data-aos="fade-up"
+      data-aos-anchor-placement="bottom-bottom">
         <div class="col-lg-4">
-          <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="https://t2.tudocdn.net/510706?w=140&h=140" alt="um gatinho  em preto e branco, logo representado pelo programa GitHub"
+          <img class="gitHub-img rounded-circle"src="https://t2.tudocdn.net/510706?w=140&h=140" alt="um gatinho  em preto e branco, logo representado pelo programa GitHub"
             role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
             <title>Placeholder</title>
 
-          <h2 style="color: #00ffff ;">Git Hub</h2>
-          <p style="color: #00ffff;" >Aprenda como instalar<br> o git hub no seu computador</p>
-          <p><a class="btn btn-primary" href="#" style="color:white;">Saiba mais &raquo;</a></p>
+          <h2 class="gitHub">Git Hub</h2>
+          <p class="gitHubText">Aprenda como instalar<br> o git hub no seu computador</p>
+          <p><a class="saibaMais btn btn-primary" href="#">Saiba mais &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="https://apexensino.com.br/wp-content/uploads/2017/10/fronback.png" 
+          <img class="frontBack-img rounded-circle" width="140" height="140" src="https://apexensino.com.br/wp-content/uploads/2017/10/fronback.png" 
           alt="uma foto que explica o que é um programador frontende e um programador backend, representados por um operario para o frontend ligado a um 
           notebook e um mergulhador para o backend ligado ao servidor">
 
-          <h2 style="color: #00ffff;">Frontend x Backend</h2>
-          <p style="color: #00ffff;">Aqui você vai encontrar um pouco sobre a diferença entre frontend e backend.</p>
-          <p><a class="btn btn-primary" href="#" style="color:white;">Saiba mais &raquo;</a></p>
+          <h2 class="frontBack">Frontend x Backend</h2>
+          <p class="frontBackText">Aqui você vai encontrar um pouco sobre a diferença entre frontend e backend.</p>
+          <p><a class="saibaMais2 btn btn-primary" href="#">Saiba mais &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="bd-placeholder-img rounded-circle" width="140" height="140" 
+          <img class="carreira-img rounded-circle"
           src="https://static3.depositphotos.com/1006077/199/i/600/depositphotos_1998679-stock-photo-dive-with-a-lot-of.jpg" 
           alt="um homem com mascara de mergulho, em um lindo amar com aguas crsitalinas">
-          <h2 style="color: #00ffff;">Mergulhe em sua Carreira</h2>
-          <p style="color: #00ffff;">Garantimos conhecimento com profundidade e diversidade, para que você mergulhe nesse mar de emoções sendo um profissional em TI</p>
-          <p><a class="btn btn-primary" href="#" style="color:white;">Saiba mais &raquo;</a></p>
+          <h2 class="carreira">Mergulhe em sua Carreira</h2>
+          <p class="carreiraText">Garantimos conhecimento com profundidade e diversidade, para que você mergulhe nesse mar de emoções sendo um profissional em TI</p>
+          <p><a class="saibaMais3 btn btn-primary" href="#">Saiba mais &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
@@ -189,11 +176,13 @@
 
       <hr class="featurette-divider">
 
-      <div class="row featurette">
+      <div class="row featurette" data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine">
         <div class="col-md-7">
-          <h1 class="featurette-heading" style="color:#00ffff;">Escola de<br><span style="color:#00ffff;">Inovação & Gestão.</span>
+          <h1 class="featurette-heading">Escola de<br><span>Inovação & Gestão.</span>
           </h1>
-          <p class="lead" style="color:#00ffff;">Prepare-se para aplicar em seu dia a dia técnicas de gestão de produtos e projetos, agilidade, 
+          <p class="lead">Prepare-se para aplicar em seu dia a dia técnicas de gestão de produtos e projetos, agilidade, 
             liderança, desenvolvimento pessoal e muito mais. Conheça os principais conceitos de boas práticas de gestão de
              produtos e projetos e se aprofunde em estratégias de metodologias ágeis.</p>
         </div>
@@ -206,10 +195,12 @@
 
       <hr class="featurette-divider">
 
-      <div class="row featurette" >
+      <div class="row featurette" data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine">
         <div class="col-md-6 order-md-2 align-middle">
-          <h2 class="featurette-heading text-center" style="color: #00ffff;">Aprendendo terminal Linux <span class="text-muted"></span></h2>
-          <p class="lead text-center" style="color: #00ffff;">Coloque a mão na massa!Aprenda comandos<br> práticos e úteis para te ajudar a resolver problemas do mundo real.</p>
+          <h2 class="featurette-heading text-center">Aprendendo terminal Linux <span class="text-muted"></span></h2>
+          <p class="lead text-center">Coloque a mão na massa!Aprenda comandos<br> práticos e úteis para te ajudar a resolver problemas do mundo real.</p>
         </div>
         <div class="col-md-6 order-md-1">
          <img src="https://s2.glbimg.com/GUrIhjUQkQesfrDMH0bHS1rsL70=/0x0:620x388/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/8/H/n31ZgkSFC36w2YGXg9yw/glbimg.com-po-tt-f-620x388-2011-12-05-tux-linux-wallpapers-free-desktop-with-the-penguin-wallpaper-1024x768.jpg" width="600" height="350" alt="">
@@ -219,10 +210,12 @@
 
       <hr class="featurette-divider">
 
-      <div class="row featurette">
+      <div class="row featurette" data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine">
         <div class="col-md-7">
-          <h2 class="featurette-heading" style="color:#00ffff;" >AWS para Iniciantes 2022 - Aprenda e Domine a nuvem Amazon <span class="text-muted"></span></h2>
-          <p class="lead" style="color:#00ffff;" >Turbine sua Carreira Agora ! Entenda de uma vez por todas como a Amazon Cloud funciona e seus Principais Serviços.</p>
+          <h2 class="featurette-heading">AWS para Iniciantes 2022 - Aprenda e Domine a nuvem Amazon <span class="text-muted"></span></h2>
+          <p class="lead">Turbine sua Carreira Agora ! Entenda de uma vez por todas como a Amazon Cloud funciona e seus Principais Serviços.</p>
         </div>
         <div class="col-md-5">
           <img src="https://www.globalmind.com.br/wp-content/uploads/2021/05/aws-header_tvMEUF2.width-800.png" alt="imagem do logo da aws" width="600" height="350">
@@ -238,17 +231,24 @@
 
 
     <!-- FOOTER -->
-    <footer class="container" style="box-sizing: border-box;">
-      <p class="float-end"><a href="#" style="color: #00ffff";>Voltar ao topo</a></p>
-      <p style="color:#00ffff;" >&copy; 2017–2021 Company, Inc. &middot; <br><a href="#" style="color: #00ffff";>Trabalhe conosco</a> &middot; <br><a href="#" style="color: #00ffff";>Para Empresas </a></p>
-      <img src="https://dtmstudio.com.br/DTM/wp-content/uploads/2018/10/whatsapp-logo-03.png" width="20px"> 
-      <img src="https://imagensemoldes.com.br/wp-content/uploads/2020/04/%C3%8Dcone-Instagram-PNG.png" width="20px" alt="">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1365px-Facebook_f_logo_%282019%29.svg.png" width="20px" alt="">
+    <footer class="container">
+      <p class="float-end"><a href="#">Voltar ao topo</a></p>
+      <p>&copy; 2017–2021 Company, Inc. &middot; <br><a href="#">Trabalhe conosco</a> &middot; <br><a href="#">Para Empresas </a></p>
+      <img class="imgWhats" src="https://dtmstudio.com.br/DTM/wp-content/uploads/2018/10/whatsapp-logo-03.png" alt="imagem do logo do whatsapp"> 
+      <img class= "imgInsta" src="https://imagensemoldes.com.br/wp-content/uploads/2020/04/%C3%8Dcone-Instagram-PNG.png" alt="imagem do logo do Instagram">
+      <img class="imgFace" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1365px-Facebook_f_logo_%282019%29.svg.png" alt="imgem do logo do Facebook">
     </footer>
   </main>
 
 
   <script src="bootstrap.bundle.min.js"></script>
+  <!-- Animate on scrool-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+
 
 
 </body>
