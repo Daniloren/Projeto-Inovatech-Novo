@@ -4,97 +4,268 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="python.css" />
-    <script src="scriptinscricao.js"></script>
 
-    <!--Fontawesome-->
+    <title>Python</title>
+
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+
+    <!--FontAwesome-->
+
     <script
-      src="https://kit.fontawesome.com/fb0ac41d7a.js"
+      src="https://kit.fontawesome.com/3871ae80b6.js"
       crossorigin="anonymous"
     ></script>
-    <title>Python</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="python.css" />
   </head>
   <body>
-    <header>
-      <img class="logo" src="/image/logo_Inova_Tech.jpg" />
-      <!--Div que alinha a barra de busca-->
-      <div class="divBusca">
-        <input
-          type="text"
-          id="txtBusca"
-          placeholder="O que você quer aprender?"
-        />
-        <button onclick="buscar()">Buscar</button>
-      </div>
+    <!--Header-->
+    <header class="p-2 text-bg-dark">
+      <div class="container-flex">
+        <div
+          class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+        >
+          <a
+            href="index.html"
+            class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
+          >
+            <img
+              class="bi me-2"
+              width="100"
+              height="100"
+              src="/Image/Logo.svg"
+              alt="Logo Inova Tech esverdeado"
+            />
+          </a>
 
-      <div class="itemMenuContainer">
-        <div class="divMenu">
-          <a href="inscricao.html"> Matrícula </a>
-        </div>
-        <!--Div que alinha a barra de login-->
-        <div class="divMenu">
-          <a href="login.html"> login </a>
+          <ul
+            class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+          >
+            <li><a href="#" class="nav-link px-2 text-secondary">Inicio</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">Cursos</a></li>
+
+            <li><a href="#" class="nav-link px-2 text-white">Contato</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">Sobre</a></li>
+          </ul>
+
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+            <input
+              type="search"
+              class="form-control form-control-dark text-bg-dark"
+              placeholder="Buscar..."
+              aria-label="Search"
+            />
+          </form>
+
+          <div class="text-end">
+            <button type="button" class="btn btn-outline-light me-2">
+              <a href="Login.html">Login</a>
+            </button>
+            <button type="button" class="btn btn-outline-light">
+              <a href="inscricao.html">Matrícula</a>
+            </button>
+          </div>
         </div>
       </div>
-      <!--Div que alinha a barra de matricula-->
     </header>
 
     <!--Descrição Do Curso-->
 
-    <section class="descricaoCurso">
+    <main>
       <h1>Python</h1>
+      <section>
+        <div class="container px-4 py-5" id="icon-grid">
+          <h2 class="pb-2 border-bottom">Icon grid</h2>
 
-      <div class="dadosCurso">
-        <div class="divUm">
-          <p>86h Carga Horária</p>
+          <div
+            class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5"
+          >
+            <div class="col d-flex align-items-start">
+              <svg
+                class="bi text-muted flex-shrink-0 me-3"
+                width="1.75em"
+                height="1.75em"
+              >
+                <use xlink:href="#bootstrap" />
+              </svg>
+              <div>
+                <h4 class="fw-bold mb-0">Featured title</h4>
+                <p>
+                  Paragraph of text beneath the heading to explain the heading.
+                </p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <svg
+                class="bi text-muted flex-shrink-0 me-3"
+                width="1.75em"
+                height="1.75em"
+              >
+                <use xlink:href="#cpu-fill" />
+              </svg>
+              <div>
+                <h4 class="fw-bold mb-0">Featured title</h4>
+                <p>
+                  Paragraph of text beneath the heading to explain the heading.
+                </p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <svg
+                class="bi text-muted flex-shrink-0 me-3"
+                width="1.75em"
+                height="1.75em"
+              >
+                <use xlink:href="#calendar3" />
+              </svg>
+              <div>
+                <h4 class="fw-bold mb-0">Featured title</h4>
+                <p>
+                  Paragraph of text beneath the heading to explain the heading.
+                </p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <svg
+                class="bi text-muted flex-shrink-0 me-3"
+                width="1.75em"
+                height="1.75em"
+              >
+                <use xlink:href="#home" />
+              </svg>
+              <div>
+                <h4 class="fw-bold mb-0">Featured title</h4>
+                <p>
+                  Paragraph of text beneath the heading to explain the heading.
+                </p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <svg
+                class="bi text-muted flex-shrink-0 me-3"
+                width="1.75em"
+                height="1.75em"
+              >
+                <use xlink:href="#speedometer2" />
+              </svg>
+              <div>
+                <h4 class="fw-bold mb-0">Featured title</h4>
+                <p>
+                  Paragraph of text beneath the heading to explain the heading.
+                </p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <svg
+                class="bi text-muted flex-shrink-0 me-3"
+                width="1.75em"
+                height="1.75em"
+              >
+                <use xlink:href="#toggles2" />
+              </svg>
+              <div>
+                <h4 class="fw-bold mb-0">Featured title</h4>
+                <p>
+                  Paragraph of text beneath the heading to explain the heading.
+                </p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <svg
+                class="bi text-muted flex-shrink-0 me-3"
+                width="1.75em"
+                height="1.75em"
+              >
+                <use xlink:href="#geo-fill" />
+              </svg>
+              <div>
+                <h4 class="fw-bold mb-0">Featured title</h4>
+                <p>
+                  Paragraph of text beneath the heading to explain the heading.
+                </p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <svg
+                class="bi text-muted flex-shrink-0 me-3"
+                width="1.75em"
+                height="1.75em"
+              >
+                <use xlink:href="#tools" />
+              </svg>
+              <div>
+                <h4 class="fw-bold mb-0">Featured title</h4>
+                <p>
+                  Paragraph of text beneath the heading to explain the heading.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="divDois">Video Aula</div>
-      </div>
-      <h2>Formação Python e orientação a objetos</h2>
-      <p class="txtCurso">
-        A linguagem Python está entre as 3 linguagens mais populares no mundo,
-        segundo a pesquisa da RedMonk. Essa popularidade se dá principalmente
-        por sua característica de exigir poucas linhas de código e permitir uma
-        leitura fácil, além de ter várias bibliotecas do mundo de
-        desenvolvimento web, Data Science, Machine Learning, automação e jogos.
-        Na Formação Python e orientação a objetos, você vai aprender a versão 3
-        dessa linguagem na prática, aplicando orientação a objetos em seu código
-        e boas práticas de programação. Você também vai entender como tratamos
-        erros e conhecer diversas funcionalidades para tratar os diferentes
-        tipos de coleções. Veremos também como ler e escrever diferentes
-        formatos de arquivos usando Python. Ao final, você terá uma base sólida
-        sobre a linguagem além de ter praticado com projetos, formando o
-        conhecimento necessário para mergulhar cada vez mais na área Python para
-        projetos web com Django e Flask.
-      </p>
-    </section>
+      </section>
+    </main>
 
     <!--Footer -->
 
-    <footer>
-      <nav class="footerLink">
-        <a class="link" href="#">Sobre</a>
-        <a class="link" href="#">Nossos Professores</a>
-        <a class="link" href="#">Para Empresas</a>
-        <a class="link" href="#">Trabalhe na Inova</a>
-      </nav>
-      <div>
-        <img
-          class="imgFace"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1365px-Facebook_f_logo_%282019%29.svg.png"
-          width="20px"
-        />
-        <img
-          class="imgInstagram"
-          src="https://imagensemoldes.com.br/wp-content/uploads/2020/04/%C3%8Dcone-Instagram-PNG.png"
-          width="20px"
-        />
-        <img
-          class="imgWhatsapp"
-          src="https://dtmstudio.com.br/DTM/wp-content/uploads/2018/10/whatsapp-logo-03.png"
-          width="20px"
-        />
-      </div>
-    </footer>
+    <div class="container-flex">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <a
+            href="index.html"
+            class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+          >
+            <img
+              class="bi"
+              src="/Image/Logo.svg"
+              width="100"
+              height="100"
+              alt=""
+            />
+          </a>
+          <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Company, Inc</span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3 mb-2">
+            <span style="font-size: 1.5em"
+              ><i class="fa-brands fa-twitter"></i
+            ></span>
+          </li>
+          <li class="ms-3">
+            <span style="font-size: 1.5em">
+              <i class="fa-brands fa-instagram"></i>
+            </span>
+          </li>
+          <li class="ms-3">
+            <span style="font-size: 1.5em">
+              <i class="fa-brands fa-facebook"></i>
+            </span>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <script src="scriptinscricao.js"></script>
+
+    <!--Popper e Bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
