@@ -56,6 +56,10 @@ width: 20px;
 .imgFace {
   width: 20px;
 }
+.img-featurette{
+  width:600px;
+  height:350px;
+}
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
@@ -130,6 +134,11 @@ width: 20px;
   
  img {
   max-width: 100%;
+}
+.img-featurette{
+  max-width: 100%;
+  height: auto;
+
 }
 .carousel-item {
   height: 20rem;
