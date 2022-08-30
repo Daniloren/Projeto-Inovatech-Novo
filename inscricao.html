@@ -1,115 +1,135 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.84.0">
     <title>InovaTecnologia - Inscrição</title>   
-    <link rel="stylesheet" type="text/css" href="inova.css">
-    <script src="scriptinscricao.js"></script>
-        
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <link rel="stylesheet" type="text/css" href="inova.css">
+         
 </head>
 <body>
-    <header>
-        <img id="logo" src="Logo.png">
-        <!--Div para alinhar barra de busca-->
-        <div id="divBusca">
-          <input type="text" id="txtBusca" placeholder="O que você quer aprender?"/>
-          <button onclick="buscar()">Buscar</button>
-        </div>
-    
-        <div class="itemMenuContainer"> 
-          <div class="divMenu">
-            <a href="index.html">
-            Início
-            </a>
-      
-          </div>
-          <!--Div para alinhar barra de login-->
-          <div class="divMenu">
-            <a href="login.html">
-              login
-            </a>       
-          </div>
-        </div>         
+    <header> 
+        <nav class="navbar navbar-expand navabar-dark">
+            <div class="container-fluid">
+              <div>      
+                <a class="navbar-brand" href="#">
+                  <img id="logo" src="Logo.png" alt="imagem do logo da empresa Inova Tech">
+                </a>
+              </div>
+
+              <div>      
+                <form class="d-flex">
+                  <input class="form-control me-2" type="Buscar" placeholder="Buscar" aria-label="Buscar">
+                  <button class="buscar btn btn-outline-success" onclick="buscar()">Buscar</button>
+                </form>
+              </div>
+
+              <div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse text-end" id="navbarCollapse">
+                  <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Login.html">login</a>
+                    </li>
+                    <li class="nav-item">
+                    </li>
+                  </ul>                  
+                </div>
+              </div>
+            </div>
+          </nav>       
      </header>
     
-     <div>    
-        <img id="mainImg" src="https://www.istoedinheiro.com.br/wp-content/uploads/sites/17/2019/10/imagemn-escolhida-artigo-e1571255765939-1280x720.jpg">
-      </div> 
-
-    <form>
-        <br>
+      <form>
         <fieldset>
-            <div class="campo" >
+            <div class="campo">
                 <label for="nome"><strong>Nome</strong></label>
-                <input type="text" name="nome" id="nome" required size="20" maxlength="20" >
+                <input type="text" class="form-control"  name="nome" aria-describedby="nome" size="20" maxlength="20">
             </div>
-
             <div class="campo">
                 <label for="sobrenome"><strong>Sobrenome</strong></label>
-                <input type="text" name="sobrenome" id="sobrenome" required required size="25" maxlength="20">
-            </div>        
+                <input type="text" class="form-control" id="sobrenome" name="sobrenome" aria-describedby="sobrenome"  size="25" maxlength="25">
+            </div>
+     </fieldset>  
+      
+        <fieldset>     
+            <div class="campo">
+                <label for="endereço"><strong>Endereço</strong></label>
+                <input type="text" class="form-control" id="endereço" name="endereço" aria-describedby="endereço"  size="60" maxlength="60" >
+            </div>
         </fieldset>
-
-        <div class="campo">
-            <label for="endereço"><strong>Endereço</strong></label>
-            <input type="text" name="endereço" id="endereço" required size="60" maxlength="60" >
-        </div>
                 
         <Fieldset>
             <div class="campo">
-                <label for="complemento"><strong>Complemento</strong></label>
-                <input type="text" name="complemento" id="complemento" required size="20" maxlength="20" >
+                <label for="numero"><strong>Nº</strong></label>
+                <input type="text" class="form-control" id="numero" id="numero" aria-describedby="numero"  size="6" maxlength="6" >
             </div>
 
             <div class="campo">
                 <label for="bairro"><strong>Bairro</strong></label>
-                <input type="text" name="bairro" id="bairro" required size="20" maxlength="20" >
+                <input type="text" class="form-control" id="bairro"  name="bairro" aria-describedby="bairro"  size="20" maxlength="20" >
             </div>
         </Fieldset>
 
         <fieldset>
             <div class="campo">
                 <label for="cidade"><strong>Cidade</strong></label>
-                <input type="text" name="cidade" id="cidade" required size="20" maxlength="20" >
+                <input type="text" class="form-control" id="cidade" name="cidade" aria-describedby="cidade" size="20" maxlength="20" >
             </div>
 
             <div class="campo">
                 <label for="estado"><strong>Estado</strong></label>
-                <input type="text" name="estado" id="estado" required size="20" maxlength="20" >
+                <input type="text" class="form-control" id="estado" aria-describedby="estado"  size="20" maxlength="20" >
             </div>
-
+       
             <div class="campo">
                 <label for="cep"><strong>CEP</strong></label>
-                <input type="text" name="cep" id="cep" required size="8" maxlength="8" >
+                <input  type="text" size="12" id="txtCep" name="txtCep" onblur="fnBuscaCep(this.value)" class="form-control" maxlength="12" >
             </div>
+
         </fieldset>
 
-        <div class="campo">
-            <label for="email"><strong>E-mail</strong></label>
-            <input type="text" name="email" id="email" required size="40" maxlength="40" >
-        </div>
+        <fieldset>
+            <div class="campo">
+                <label for="email"><strong>E-mail</strong></label>
+                <input type="text" class="form-control" id="email" size="60" maxlength="60" >
+            </div>
+        </fieldset>
 
         <fieldset>
             <div class="campo">
                 <label for="senha"><strong>Senha</strong></label>
-                <input type="password" name="senha" id="senha" required size="15" maxlength="15" >
+                <input type="password" class="form-control" id="senha"  size="15" maxlength="15" >
             </div>
             <div class="campo">   
                 <label for="repetirSenha"><strong>Repetir Senha</strong></label>
-                <input type="password" name="repetirSenha" id="repetirSenha" required size="15" maxlength="15" >
+                <input type="password" class="form-control" id="repetirSenha"  size="15" maxlength="15" >
             </div>
         </fieldset>
         
-        <div>
-            <input type="checkbox" name="checkbox1" value="check1" /> Quero receber ofertas especiais, recomendações personalizadas e dicas de aprendizado.
+        <div class="checkbox">
+            <input type="checkbox" value="check1" /> Quero receber ofertas especiais, recomendações personalizadas e dicas de aprendizado.
             <p>Ao se inscrever, você concorda com nossos termos de Uso e com a Política de Privacidade.</p>
         </div>            
-            <br>
-            <br>
-            <!-- Botão para enviar o formulário -->
+            
+        <!-- Botão para enviar o formulário -->
         <div id="incluirDados">
             <button class="botao" onclick="cadastrar()">Cadastrar</button>  
         </div>
@@ -118,22 +138,19 @@
         <br>
     </form>
 <br>
-<footer>
-    <div>    
-      <img class="imgFace"
-      src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1365px-Facebook_f_logo_%282019%29.svg.png"
-      width="20px">
-      <img class="imgInstagram" src="https://imagensemoldes.com.br/wp-content/uploads/2020/04/%C3%8Dcone-Instagram-PNG.png" width="20px">
-      <img class="imgWhatsapp" src="https://dtmstudio.com.br/DTM/wp-content/uploads/2018/10/whatsapp-logo-03.png" width="20px">
-    </div>
 
-      <ul>          
-          <li>Sobre</li>
-          <li> Nossos Professores</li>
-          <li>Para Empresas</li>
-          <li>Trabalhe na Inova Tecnologia</li>
-        </ul>
+<!-- FOOTER -->
+<footer class="container">
+    <p class="float-end"><a href="#">Voltar ao topo</a></p>
+    <p>&copy; 2017–2021 Company, Inc. &middot; <br><a href="#">Trabalhe conosco</a> &middot; <br><a href="#">Para Empresas </a></p>
+    <img class="imgWhats" src="https://dtmstudio.com.br/DTM/wp-content/uploads/2018/10/whatsapp-logo-03.png" alt="imagem do logo do whatsapp"> 
+    <img class= "imgInsta" src="https://imagensemoldes.com.br/wp-content/uploads/2020/04/%C3%8Dcone-Instagram-PNG.png" alt="imagem do logo do Instagram">
+    <img class="imgFace" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1365px-Facebook_f_logo_%282019%29.svg.png" alt="imagem do logo do Facebook">
+  </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+    <script src="scriptinscricao.js"></script>
     
-      </footer>
 </body>
 </html>
