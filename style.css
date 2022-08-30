@@ -3,11 +3,12 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  background-color: black;
+  background-color: #141414;
 }
-
+a{
+  color: #00ffff;
+  text-decoration: none;
+}
 .navbar {
 background-color: black;
 }
@@ -114,9 +115,13 @@ width: 20px;
   line-height: 1;
   /* rtl:remove */
   letter-spacing: -.05rem;
-}
-
-
+  }
+  footer {
+    padding-right: 1em;
+    color: #00ffff;
+    background-color: RGBA(33,37,41,var(--bs-bg-opacity,1))!important;
+    margin-top: 1.5em;
+    }
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 

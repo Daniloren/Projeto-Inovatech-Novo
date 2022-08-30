@@ -1,5 +1,5 @@
 /* Corpo da página */
-body {padding-top: 3rem; padding-bottom: 3rem; background-color: black;}
+body {background-color: #141414;}
     
 /* Logo */     
 #logo{margin-top: 50px; height: 120px;}
@@ -18,7 +18,7 @@ body {padding-top: 3rem; padding-bottom: 3rem; background-color: black;}
 a{color: #00ffff; text-decoration: none;}
 
 /* Formulário */
-form{top: 100px; margin-left: 10%;  font-size: 12px; margin-top: 50px;}
+.form{top: 100px; margin-left: 10%;  font-size: 12px; margin-top: 50px;}
 
 /* Elementos de tag <fieldset>*/
 fieldset {border: transparent; display: flex; align-items: center;}
@@ -50,10 +50,16 @@ fieldset {border: transparent; display: flex; align-items: center;}
 .botao:hover {background: #0fe5d0;}
 
 /* Rodapé */
-.container {color: #00ffff;box-sizing: border-box;}
+/* .container {color: #00ffff;box-sizing: border-box;}
 
 .imgWhats {width: 20px;}
 
 .imgInsta {width: 20px;}
 
-.imgFace {width: 20px;}
+.imgFace {width: 20px;} */
+footer {
+    padding-right: 1em;
+    color: #00ffff;
+    background-color: RGBA(33,37,41,var(--bs-bg-opacity,1))!important;
+    margin-top: 1.5em;
+    }
