@@ -1,3 +1,6 @@
+/*
+Global Style
+*/
 html,
 body {
   height: 100%;
@@ -8,8 +11,12 @@ body {
   align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: black;
+  background-color: #141414;
 }
+
+/*
+Login
+*/
 
 .form-signin {
   max-width: 330px;
@@ -104,4 +111,4 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
-.
+

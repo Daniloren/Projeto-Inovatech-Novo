@@ -1,62 +1,88 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-BR">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.101.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Hugo 0.101.0" />
     <title>Login InovaTech</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sign-in/">
+    <!--Bootstrap-->
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.2/examples/sign-in/"
+    />
 
-    
+    <link href="style/bootstrap.min.css" rel="stylesheet" />
 
-    
-
-<link href="bootstrap.min.css" rel="stylesheet">
-
-
-    
-    <!-- Custom styles for this template -->
-    <link href="Login.css" rel="stylesheet">
+    <!-- CSS -->
+    <link href="style/login.css" rel="stylesheet" />
   </head>
   <body class="text-center">
-    
-<main class="form-signin w-100 m-auto">
-  <form>
-    <img class="mb-4" src="LogoNovo.png" alt="imagem do logo da escola inova tecnologia">
-    <h1 class="h3 mb-3 fw-normal">Login</h1>
+    <main class="form-signin w-100 m-auto">
+      <form>
+        <a href="index.html">
+          <img
+            class="mb-4"
+            src="image/LogoNovo.png"
+            alt="imagem do logo da escola inova tecnologia"
+          />
+        </a>
 
-    <div class="form-floating">
-      <input type="email" class="form-control" id="floatingInput" placeholder="nome@exemplo.com">
-      <label for="floatingInput">E-mail</label>
-    </div>
-    <div class="form-floating">
-      <input type="password" class="form-control" id="floatingPassword" placeholder="Senha">
-      <label for="floatingPassword">Senha</label>
-    </div>
+        <h1 class="h3 mb-3 fw-normal">Login</h1>
 
-    <div class="checkbox mb-3">
-      <label>
-        <input type="checkbox" value="Lembre me"> Lembre me
-      </label>
-    </div>
+        <div class="form-floating">
+          <input
+            type="email"
+            class="form-control"
+            id="floatingInput"
+            placeholder="nome@exemplo.com"
+          />
+          <label for="floatingInput">E-mail</label>
+        </div>
+        <div class="form-floating">
+          <input
+            type="password"
+            class="form-control"
+            id="floatingPassword"
+            placeholder="Senha"
+          />
+          <label for="floatingPassword">Senha</label>
+        </div>
 
-    <div class="checkbox2">
-        <a>
-          <!--css do esqueci minha senha-->
-        <p class="esqueciMinhaSenha"><a href="#" style="color: #00ffff" >Esqueci minha senha</a></p> 
-        </a>        
-       </div>
+        <div class="checkbox mb-3">
+          <label> <input type="checkbox" value="Lembre me" /> Lembre me </label>
+        </div>
 
-    <button class="btn btn-outline-success" id="recover-oassword-button" type="submit"  href="index.html">Entrar</button>
-    <p class="mt-5 mb-3 text-muted">&copy; 2022–2022</p>
-  </form>
-</main>
+        <div class="checkbox2">
+          <a>
+            <!--css do esqueci minha senha-->
+            <p class="esqueciMinhaSenha">
+              <a href="#" style="color: #00ffff">Esqueci minha senha</a>
+            </p>
+          </a>
+        </div>
 
-<script src="bootstrap.bundle.min.js"></script>
-<script  defer src="Login.js"></script>
-    
+        <button
+          class="btn btn-outline-success"
+          id="recover-oassword-button"
+          type="submit"
+          href="index.html"
+        >
+          Entrar
+        </button>
+        <p class="mt-5 mb-3 text-muted">&copy; 2022–2022</p>
+      </form>
+    </main>
+
+    <!--JS Bootstrap-->
+    <script src="app/bootstrap.bundle.min.js"></script>
+
+    <!--JavaScript-->
+    <script defer src="app/login.js"></script>
   </body>
 </html>
